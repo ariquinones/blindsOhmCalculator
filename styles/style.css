@@ -24,10 +24,12 @@ h1 {
     text-indent: .5em;
     background: rgba(53,67,78,1);
     color: white;
+    font-size: 1em;
 }
 .calculateButton {
 	color: white;
 	background: rgba(236,66,20,1);
+	opacity: .9;
 	font-size: 1.75em;
 	padding: 4%;
 	border-radius: 0 0 5px 5px;
@@ -35,6 +37,7 @@ h1 {
 }
 .calculateButton:hover {
 	cursor: pointer;
+	opacity: 1;
 }
 .solutionContainer {
 	padding: 4%;
@@ -68,7 +71,6 @@ span {
 	line-height: 4vh;
 	}
 	.colorSelector {
-		font-size: 1em;
 		margin-left: 1%;
 	}
 }

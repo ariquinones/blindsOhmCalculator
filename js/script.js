@@ -5,7 +5,7 @@
 		this.secondColor = '';
 		this.thirdColor = '';
 		this.fourthColor = '';
-		this.resistorValue = '';
+		this.resistorValue = '0';
 		this.getFirstColor = function(selectedColor) {
 			this.firstColor = selectedColor
 		};
@@ -19,7 +19,6 @@
 		this.getFourthColor = function(selectedColor) {
 			this.fourthColor = selectedColor
 		};
-
 		this.getResistorValue = function() {
 			if ((this.thirdColor === 'red') || (this.thirdColor === 'orange') || (this.thirdColor === 'yellow')) {
 				var units = 'K'

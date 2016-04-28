@@ -1,0 +1,74 @@
+body {
+	background: rgba(0,136,215,1);
+}
+#ohmCalculator {
+	background: white;
+	margin: 5% auto;
+	border-radius: 5px;
+	width: 50%;
+	text-align: center;
+	color: rgba(53,67,78,1);
+}
+h1 {
+	color: white;
+	font-size: 2em;
+}
+.selectContainer {
+	display: inline-block;
+	width: 45%;
+	margin: 15% 2%;
+}
+.colorSelector {
+	width: 45%;
+	border: 1px solid white;
+    text-indent: .5em;
+    background: rgba(53,67,78,1);
+    color: white;
+}
+.calculateButton {
+	color: white;
+	background: rgba(236,66,20,1);
+	font-size: 1.75em;
+	padding: 4%;
+	border-radius: 0 0 5px 5px;
+	line-height: 5vh;
+}
+.calculateButton:hover {
+	cursor: pointer;
+}
+.solutionContainer {
+	padding: 4%;
+	background: rgba(53,67,78,1);
+	border-radius: 5px 5px 0 0;
+	height: 7vh;
+}
+.resistorValue {
+	line-height: 1vh;
+	font-size: 2em;
+	color: white;
+}
+span {
+	font-size: 1.5em;
+}
+
+@media only screen and (max-width: 768px) {
+   .selectContainer {
+	display: block;
+	width: 90%;
+	margin: 15% 1%;
+	}
+}
+@media only screen and (max-device-width: 1024px) {
+   .selectContainer {
+	display: block;
+	width: 90%;
+	margin: 15% 1%;
+	}
+	.resistorValue {
+	line-height: 4vh;
+	}
+	.colorSelector {
+		font-size: 1em;
+		margin-left: 1%;
+	}
+}

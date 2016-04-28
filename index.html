@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="ohmCalculator">
+<head>
+	<title>Blinds Ohm Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body ng-controller="StoreController as ohmCalculator">
+	<div id="ohmCalculator">
+		<div class="solutionContainer">
+			<p class="resistorValue"> {{ohmCalculator.resistorValue}}</p>
+		</div>
+		<div class="selectContainer">
+			<span>First Band</span>
+			<select class="colorSelector"
+					ng-options="color for color in ohmCalculator.firstColorSelection"
+					ng-model='firstColor' 
+					ng-change="ohmCalculator.getFirstColor(firstColor)">
+			</select>
+		</div>
+		<div class="selectContainer">
+			<span>Second Band</span>
+			<select class="colorSelector"
+					ng-options="color for color in ohmCalculator.secondColorSelection" 
+					ng-model='secondColor' 
+					ng-change="ohmCalculator.getSecondColor(secondColor)" >
+			</select>
+		</div>
+		<div class="selectContainer">
+			<span>Third Band</span>
+			<select class="colorSelector"
+					ng-options="color for color in ohmCalculator.multiplierColorSelection"
+					ng-model='thirdColor' 
+					ng-change="ohmCalculator.getThirdColor(thirdColor)" >
+			</select>
+		</div>
+		<div class="selectContainer">
+			<span>Fourth Band</span>
+			<select class="colorSelector"
+					ng-options="color for color in ohmCalculator.toleranceColorSelection" 
+					ng-model='fourthColor' 
+					ng-change="ohmCalculator.getFourthColor(fourthColor)" >
+			</select>
+		</div>
+
+		<div class="calculateButton" ng-click="ohmCalculator.getResistorValue()"> Calculate Resistor Value</div>
+	</div>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
